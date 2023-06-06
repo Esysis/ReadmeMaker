@@ -5,7 +5,11 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // Create an array of questions for user input
 
 const questions = [
-    
+  {
+    type: 'input',
+    name: 'title',
+    message: 'Enter a Title for your project:',
+  }, 
   {
     type: 'input',
     name: 'description',
@@ -40,7 +44,7 @@ const questions = [
     type: 'input',
     name: 'email',
     message: 'Enter your email address:',
-  },
+  }, 
   {
     type: 'list',
     name: 'license',
